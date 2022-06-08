@@ -1,0 +1,26 @@
+{
+    "name": "notes-app-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/server.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "nodemon ./src/server.js",
+        "lint": "eslint ./src"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.17.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.1",
+        "eslint-plugin-promise": "^6.0.0",
+        "nodemon": "^2.0.16"
+    },
+    "dependencies": {
+        "@hapi/hapi": "^20.2.2",
+        "uuid": "^8.3.2"
+    }
+}
