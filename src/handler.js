@@ -1,9 +1,9 @@
-const { v4: uuidv4 } = require('uuid')
+const { nanoid } = require('nanoid')
 const notes = require('./notes.js')
 
 const createNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload
-  const id = uuidv4()
+  const id = nanoid(16)
   const createdAt = new Date().toISOString()
   const updatedAt = createdAt
 
